@@ -147,7 +147,6 @@ unfuncaptcha_bda==0.0.4
 uritemplate==4.1.1
 urllib3==1.26.20
 uvicorn==0.34.2
-vboxapi==1.0
 vine==5.1.0
 w3lib==2.2.1
 wcwidth==0.2.13
@@ -158,3 +157,4 @@ wsproto==1.2.0
 yt-dlp==2024.12.23
 zipp==3.21.0
 zope.interface==7.2
+pytz==2022.7
