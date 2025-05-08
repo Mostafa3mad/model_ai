@@ -9,7 +9,7 @@ import sys
 sys.modules['__main__'].preprocess_text = preprocess_text
 
 # تحميل الموديلات مرة واحدة
-models = joblib.load("model_ai/chatbot_models.pkl")
+models = joblib.load("model/chatbot_models.pkl")
 medical_classifier = models["medical_classifier"]
 disease_classifier = models["disease_and_specialization_classifier"]
 label_encoder = models["label_encoder"]
