@@ -92,7 +92,6 @@ pydantic_core==2.33.1
 PyDispatcher==2.0.7
 pyee==12.0.0
 PyExecJS==1.5.1
-PyGetWindow==0.0.9
 PyJWT==2.10.1
 PyMsgBox==1.0.9
 pyOpenSSL==24.3.0
@@ -107,7 +106,6 @@ PySocks==1.7.1
 python-dateutil==2.9.0.post0
 python-decouple==3.8
 pytweening==1.2.0
-pywinauto==0.6.9
 PyYAML==6.0.2
 qrcode==8.0
 queuelib==1.7.0
