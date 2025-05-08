@@ -108,7 +108,6 @@ python-dateutil==2.9.0.post0
 python-decouple==3.8
 pytweening==1.2.0
 pytz==2025.1
-pywin32==308
 pywinauto==0.6.9
 PyYAML==6.0.2
 qrcode==8.0
