@@ -156,4 +156,4 @@ wsproto==1.2.0
 yt-dlp==2024.12.23
 zipp==3.21.0
 zope.interface==7.2
-pytz==2025.1
+pytz
