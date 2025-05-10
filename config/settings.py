@@ -26,7 +26,6 @@ SECRET_KEY = 'django-insecure-lm*zd543j_p@*6q&&016poha3!gpl--hbj6b$xhi%hi=g)=nxl
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -38,13 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
-    'model',
+    # External apps
+    'corsheaders',
     'rest_framework',
 
+    # Internal apps
+    'model',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # يجب أن يكون في البداية
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -127,9 +129,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Django REST Framework
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
     )
 }
+
+# CORS settings - allow all origins
+CORS_ALLOW_ALL_ORIGINS = True
